@@ -8,9 +8,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: site.name,
   description: site.tagline !== "NONE" ? site.tagline : "个人主页",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

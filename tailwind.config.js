@@ -1,7 +1,5 @@
-import type { Config } from "tailwindcss"
-import { site } from "./site.config"
-
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,15 +8,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: site.theme.primary || "#0ea5e9",
+        primary: "#0ea5e9",
       },
       borderRadius: {
-        '2xl': '1rem',
+        "2xl": "1rem",
       },
       boxShadow: {
-        'soft': '0 10px 30px rgba(0,0,0,0.06)',
-      }
+        soft: "0 10px 30px rgba(0,0,0,0.06)",
+      },
     },
   },
   plugins: [],
-} satisfies Config
+};

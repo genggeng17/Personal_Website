@@ -2,13 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg: #ffffff;
-}
-
+:root { --bg: #ffffff; }
 html, body { height: 100%; }
 
-/* selection */
 ::selection {
   background: theme('colors.primary');
   color: white;
